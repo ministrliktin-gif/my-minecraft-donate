@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Анархия MC - Донат 🔥</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #ff4500;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 50px 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 69, 0, 0.5);
+            border: 1px solid #ff4500;
+        }
+        h1 { margin-top: 0; text-transform: uppercase; letter-spacing: 2px; }
+        p { color: #cccccc; margin-bottom: 25px; }
+        input, select {
+            width: 90%;
+            padding: 12px;
+            margin-bottom: 15px;
+            background: #2a2a2a;
+            border: 1px solid #ff4500;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background: #ff4500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        button:hover { background: #ff5722; box-shadow: 0 0 15px #ff4500; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Анархия</h1>
+            <p>Выживает сильнейший. Купи преимущество.</p>
+            
+            <form action="/buy" method="POST">
+                <input type="text" name="nickname" placeholder="Твой ник на сервере" required>
+                
+                <select name="item" required>
+                    <option value="" disabled selected>-- Выбери товар --</option>
+                    <option value="VIP">Привилегия VIP - 100 руб.</option>
+                    <option value="PREMIUM">Привилегия PREMIUM - 250 руб.</option>
+                    <option value="GOD">Статус GOD - 500 руб.</option>
+                    <option value="Кит-старт">Кит 'Убийца' - 75 руб.</option>
+                </select>
+                
+                <button type="submit">Купить</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
